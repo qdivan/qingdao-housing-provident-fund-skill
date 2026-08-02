@@ -1,7 +1,7 @@
 ---
 name: qingdao-housing-provident-fund
 description: Use when answering or researching Qingdao housing provident fund questions, including contribution, withdrawal, loans, transfer, enforcement, accounting, bad-debt write-off, and current policy verification. Require official national and Qingdao sources, effective-date checks, and citation-backed answers.
-version: 0.9.7
+version: 0.9.8
 author: qdivan / Hermes Agent
 license: MIT
 metadata:
@@ -113,6 +113,8 @@ metadata:
 32. 错账调整与提取是不同业务。当前错账调整指南的时限段落误写“准予提取或者不准提取”，属于官方页面内部复制错误；应原样提示冲突并向中心复核，不得据此要求提取材料或把调整结果表述为提取决定。
 33. 官网入口本身不等于有效事项证据。当前“离休提取住房公积金”入口所指政务服务页缺少事项名称、主体、编码、依据、条件和材料，不得用空页推断办理口径；须等待修复或另取官方完整事项页。
 34. 提前部分还款和提前结清须区分。两项均要求当前无逾期未还本息并落实还款账户资金；部分还款后的期限、月供和利息以合同与办理结果为准，全部还清证明也不等于抵押登记自动注销。
+35. 贷款利率必须沿人民银行调整链按时点判断。2022年仅调整首套利率；银发〔2024〕104号自2024-05-18同时调整首套和第二套；人民银行2025-05-07通知又自2025-05-08整体下调0.25个百分点。当前青岛须知采用首套2.1%/2.6%、第二套不低于2.525%/3.075%，但新发贷款起息、存量贷款重定价和组合贷商贷部分应分别核对人民银行通知、合同及青岛办理时最新页面，不能只按通知发布日期机械套用。
+36. 住房公积金税前扣除须区分缴存规则和税务规则。财税〔2006〕10号同时设置缴存比例和工资基数上限，超限部分计入当期工资薪金；“公积金账户可缴存”不当然等于全部可在个人所得税前扣除。回答当前税务问题还须核对现行个人所得税法、实施条例、当地统计工资基数及实际缴存数据，文件效力未终核时须保留提示。
 
 无法确认时明确写“效力待官方进一步核验”，不得自行推定。
 
