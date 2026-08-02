@@ -52,8 +52,10 @@ class ValidateCatalogTests(unittest.TestCase):
     def test_official_domain_matching_is_boundary_aware(self):
         self.assertTrue(validate_catalog.is_official("https://www.gov.cn/a"))
         self.assertTrue(validate_catalog.is_official("http://www.qdgjj.com/a"))
+        self.assertTrue(validate_catalog.is_official("https://www.cqgjj.cn/a"))
         self.assertFalse(validate_catalog.is_official("https://evilgov.cn/a"))
         self.assertFalse(validate_catalog.is_official("https://qdgjj.com.example/a"))
+        self.assertFalse(validate_catalog.is_official("https://cqgjj.cn.example/a"))
 
 
 if __name__ == "__main__":

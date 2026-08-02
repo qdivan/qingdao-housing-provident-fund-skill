@@ -24,6 +24,7 @@ REQUIRED = {
 OFFICIAL_DOMAINS = (
     "gov.cn",
     "qdgjj.com",
+    "cqgjj.cn",
 )
 
 

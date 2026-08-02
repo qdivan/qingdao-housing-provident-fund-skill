@@ -1,7 +1,7 @@
 ---
 name: qingdao-housing-provident-fund
 description: Use when answering or researching Qingdao housing provident fund questions, including contribution, withdrawal, loans, transfer, enforcement, accounting, bad-debt write-off, and current policy verification. Require official national and Qingdao sources, effective-date checks, and citation-backed answers.
-version: 0.9.8
+version: 0.9.9
 author: qdivan / Hermes Agent
 license: MIT
 metadata:
@@ -132,6 +132,7 @@ metadata:
 8. 清理目录的证明对象必须精确：住建部目录列明其转发通知继续有效，不等于财政部已在同一日期或当前明确确认财综〔2006〕10号有效，更不等于青岛已有可直接执行的核销细则。
 9. 使用本地归档时核对 `sources/catalog.csv` 中的 SHA256；不得因已有全文而跳过山东、青岛实施制度和个案适用条件。
 10. 个案批复只能用于其明确陈述的引用关系或个案结论，除非另有普遍适用的官方规范性文件，不得扩张为全国或青岛通用规则。
+11. 财综字〔1999〕59号、财会字〔1999〕33号及财会字〔2000〕12号已取得官方完整转载或中央机关发布通知，可用于交叉解释财务审批和会计处理，但三者当前效力均未获财政部清理目录终核。财务办法第二十五条的核销审批链、会计办法的冲销分录以及补充规定将抵押物处置不足额列入“其他应收款”是不同层面的规则；不得只凭会计分录推定审批完成、债权终止或无需继续追索。
 
 ### 5. 形成答案
 
