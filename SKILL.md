@@ -1,7 +1,7 @@
 ---
 name: qingdao-housing-provident-fund
 description: Use when answering or researching Qingdao housing provident fund questions, including contribution, withdrawal, loans, transfer, enforcement, accounting, bad-debt write-off, and current policy verification. Require official national and Qingdao sources, effective-date checks, and citation-backed answers.
-version: 0.5.0
+version: 0.6.0
 author: qdivan / Hermes Agent
 license: MIT
 metadata:
@@ -91,6 +91,7 @@ metadata:
 10. 贷后管理通知中的贷款期限、到期年龄、利率等动态参数可能被后续贷款办法或专项通知调整。判断期限变更、借款主体变更或抵押物产权共有人变更时，应分别核验“该业务能否办理”和“办理时采用的当前参数”，不得因业务通知未见废止就沿用其中的旧参数。
 11. 办事指南的“发布时间”通常是页面更新快照，不等于其所依据规范性文件的发布日期或施行日。指南可证明更新时的材料、渠道和时限，但涉及资格和权利义务仍应回溯正式文件。
 12. 官方办事指南也可能存在文号排版错误。当前贷款主体变更指南把依据误排为“青住金规[2023]89号”，正式政策页为“青住金字〔2023〕89号”；发生冲突时以正式文件标题、正文和附件交叉核验，不得静默复制错误。
+13. 官方办事指南的页面日期也可能与正文发生不可能的时间先后。当前经济适用房、限价商品房贷款指南显示发布时间为2024-02-05，正文却引用2025年发布的青住金规〔2025〕1号；只能将其作为访问时的当前页面快照，不得据页面日期倒推该版内容在2024年已经存在。
 
 无法确认时明确写“效力待官方进一步核验”，不得自行推定。
 
@@ -154,6 +155,7 @@ metadata:
 11. **把附件模板当成已成立的担保。** 模板不是个案签署、审批或法律效力证明。
 12. **把办事指南更新时间当成政策施行日。** 页面更新、文件发布和规则施行是不同日期。
 13. **认为补还逾期即可自动修复信用。** 还款办理结果与征信、系统记录及贷款资格审查必须分开判断。
+14. **忽略页面日期与正文依据冲突。** 出现“页面发布日期早于所引文件”等异常时要显式标注，并按访问日快照处理，不能自行猜测真实更新时间。
 
 ## Verification Checklist
 
