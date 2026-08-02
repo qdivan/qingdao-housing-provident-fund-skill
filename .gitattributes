@@ -1,2 +1,3 @@
-# Preserve byte-identical official HTML snapshots; upstream pages contain trailing spaces.
-sources/**/*.html whitespace=-blank-at-eol
+# Preserve byte-identical official HTML snapshots; upstream pages contain CRLF,
+# trailing spaces, space-before-tab indentation, and occasional final blank lines.
+sources/**/*.html -whitespace
