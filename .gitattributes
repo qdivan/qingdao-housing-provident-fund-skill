@@ -1,0 +1,2 @@
+# Preserve byte-identical official HTML snapshots; upstream pages contain trailing spaces.
+sources/**/*.html whitespace=-blank-at-eol
