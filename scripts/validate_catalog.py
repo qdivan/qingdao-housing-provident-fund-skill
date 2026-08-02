@@ -49,10 +49,15 @@ def main() -> int:
     seen_ids: set[str] = set()
     seen_keys: set[tuple[str, str]] = set()
     for line_no, row in enumerate(rows, start=2):
+        if None in row:
+            errors.append(f"line {line_no}: extra CSV columns {row[None]}")
+
+        for field in sorted(REQUIRED):
+            if not (row.get(field) or "").strip():
+                errors.append(f"line {line_no}: empty required field {field}")
+
         rid = row.get("id", "").strip()
-        if not rid:
-            errors.append(f"line {line_no}: empty id")
-        elif rid in seen_ids:
+        if rid in seen_ids:
             errors.append(f"line {line_no}: duplicate id {rid}")
         seen_ids.add(rid)
 
