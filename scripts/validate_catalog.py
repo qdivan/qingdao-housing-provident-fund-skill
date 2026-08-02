@@ -21,11 +21,9 @@ REQUIRED = {
     "official_page_url",
     "accessed_at",
 }
-OFFICIAL_SUFFIXES = (
-    ".gov.cn",
+OFFICIAL_DOMAINS = (
     "gov.cn",
-    ".qingdao.gov.cn",
-    "qingdao.gov.cn",
+    "qdgjj.com",
 )
 
 
@@ -33,7 +31,7 @@ def is_official(url: str) -> bool:
     if not url:
         return False
     host = (urlparse(url).hostname or "").lower()
-    return any(host == suffix.lstrip(".") or host.endswith(suffix) for suffix in OFFICIAL_SUFFIXES)
+    return any(host == domain or host.endswith(f".{domain}") for domain in OFFICIAL_DOMAINS)
 
 
 def main() -> int:

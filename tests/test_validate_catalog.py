@@ -49,6 +49,12 @@ class ValidateCatalogTests(unittest.TestCase):
         self.assertEqual(result, 1)
         self.assertIn("empty required field accessed_at", error)
 
+    def test_official_domain_matching_is_boundary_aware(self):
+        self.assertTrue(validate_catalog.is_official("https://www.gov.cn/a"))
+        self.assertTrue(validate_catalog.is_official("http://www.qdgjj.com/a"))
+        self.assertFalse(validate_catalog.is_official("https://evilgov.cn/a"))
+        self.assertFalse(validate_catalog.is_official("https://qdgjj.com.example/a"))
+
 
 if __name__ == "__main__":
     unittest.main()
