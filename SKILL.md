@@ -1,7 +1,7 @@
 ---
 name: qingdao-housing-provident-fund
 description: Use when answering or researching Qingdao housing provident fund questions, including contribution, withdrawal, loans, transfer, enforcement, accounting, bad-debt write-off, and current policy verification. Require official national and Qingdao sources, effective-date checks, and citation-backed answers.
-version: 0.2.0
+version: 0.3.0
 author: qdivan / Hermes Agent
 license: MIT
 metadata:
@@ -86,6 +86,8 @@ metadata:
 5. 页面标题含“已失效”或正文明确废止的历史文件，只能用于对应历史期间和替代关系。
 6. 页面标题没有“已失效”不代表仍有效；正文明确有效期届满的文件（如青住金规〔2018〕7号）必须按历史文件处理。
 7. 国务院常务会议“审议通过修改决定（草案）”、公开征求意见稿或官方政策解读都不是已经公布施行的行政法规修改文本。必须继续查正式国务院令、决定全文和施行日期；在正式公布前，按当前官方整合文本回答，并单列修法动态。
+8. 贷款基础执行通知与后续专项调整必须逐项合并：青住金发〔2025〕6号中的缴存认定、还贷能力系数和额度叠加上限已分别被青住金发〔2025〕10号及2025-06-26专项通知调整，不得照搬基础文件中的旧参数。
+9. 同一政策同时出现在提取、贷款等栏目时属于重复发布入口，不应重复计作两份依据；以正文标题、文号、落款和内容识别同一文件。
 
 无法确认时明确写“效力待官方进一步核验”，不得自行推定。
 
@@ -118,6 +120,7 @@ metadata:
 
 对额度、利率、缴存上下限等数字，必须注明适用年度和官方更新时间。
 合作银行名单也属于动态办理参数，必须注明官方公告日期，并在办理前复核公告栏；不得把某日名单表述为永久范围。
+个人信用信息属于动态个案事实。引用2026-05-29贷款信用认定通知时，应分别核对征信报告、公积金系统记录、可补正例外及证明材料；不得只凭“有过逾期”或页面摘要直接判断能否贷款。
 
 ## 引用规则
 
@@ -139,6 +142,7 @@ metadata:
 6. **使用没有年度标签的额度参数。** 标明年度、发布日期和有效期。
 7. **宣称“资料齐全”。** 只能说明已覆盖的官方目录和仍存在的检索缺口。
 8. **把草案进程当成现行法。** “国务院常务会议审议通过草案”后仍须等待并核对正式公布文本和施行日期。
+9. **从基础贷款通知抄录已调整参数。** 必须沿修改链合并青住金发〔2025〕10号、2025-06-26通知及更晚文件。
 
 ## Verification Checklist
 
